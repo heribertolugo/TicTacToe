@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TicTacToe
+</name>
+</assembly>
+<members>
+<member name="P:TicTacToe.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TicTacToe.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:TicTacToe.My.Resources.Resources.o">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TicTacToe.My.Resources.Resources.x">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:TicTacToe.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TicTacToe.Main_Form.NewGame">
+	<summary>
+ Initiates GameBoard and Pieces for a new game.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.ShowScores">
+	<summary>
+ Displays a window to show player scores
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.SetPlayerNames">
+	<summary>
+ Provides a means to change the Name of each Player
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.RowMatch(System.Int32,System.Collections.Generic.IEnumerable{System.Windows.Forms.TableLayoutPanelCellPosition}@)">
+	<summary>
+ Checks GameBoard for a win at the specified row.
+ </summary>
+	<param name="row">Integer: The index of the row to check</param>
+	<param name="winningPieces">IEnumerable: List which will be populated with winning TableLayoutPanelCellPosition</param>
+	<returns>Boolean: True if the row contains game pieces of equal value.</returns>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.ColumnMatch(System.Int32,System.Collections.Generic.IEnumerable{System.Windows.Forms.TableLayoutPanelCellPosition}@)">
+	<summary>
+ Checks GameBoard for a win at the specified column.
+ </summary>
+	<param name="column">Integer: The index of the column to check</param>
+	<param name="winningPieces">IEnumerable: List which will be populated with winning TableLayoutPanelCellPosition</param>
+	<returns>Boolean: True if the column contains game pieces of equal value.</returns>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.DiagMatch(System.Windows.Forms.Control,System.Collections.Generic.IEnumerable{System.Windows.Forms.TableLayoutPanelCellPosition}@)">
+	<summary>
+ Checks GameBoard for a win at the diagonals.
+ </summary>
+	<param name="gamePiece">Control: The gamePiece to check</param>
+	<param name="winningPieces">IEnumerable: List which will be populated with winning TableLayoutPanelCellPosition</param>
+	<returns>Boolean: True if a diagonal contains game pieces of equal value.</returns>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.DeclareWinner(TicTacToe.Player@,System.Collections.Generic.IEnumerable{System.Windows.Forms.TableLayoutPanelCellPosition})">
+	<summary>
+ Declare a winner, disable GameBoard and highlight winning pieces if any
+ </summary>
+	<param name="winner"></param>
+	<param name="winningPieces"></param>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Main_Form.DisablePiece(System.Windows.Forms.Control@)">
+	<summary>
+ Disabled game piece from play.
+ </summary>
+	<param name="gamePiece">Control: Game Piece to disable from play</param>
+	<remarks>Removes click, mouseover and mouseleave event handlers</remarks>
+</member><member name="M:TicTacToe.Main_Form.EnablePiece(System.Windows.Forms.Control@)">
+	<summary>
+ Enables game piece into play.
+ </summary>
+	<param name="gamePiece">Control: Game Piece to enable into play</param>
+	<remarks>Adds click, mouseover and mouseleave event handlers</remarks>
+</member><member name="M:TicTacToe.Player.#ctor">
+	<summary>
+ Creates a new Player
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TicTacToe.Player.#ctor(System.String)">
+	<summary>
+ Creates a new Player with the provided name.
+ </summary>
+	<param name="name">String: Used as identifier for player</param>
+	<remarks></remarks>
+</member><member name="P:TicTacToe.Player.Name">
+	<summary>
+ Name of Player, identifier
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:TicTacToe.Player.Score">
+	<summary>
+ Players Score
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:TicTacToe.Player.Piece">
+	<summary>
+ Image Player is using in game.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
